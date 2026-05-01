@@ -5,13 +5,14 @@ import { PauseOverlay, useTuning, type ScaffoldTuning } from '~/core';
 import { Logo } from '~/core/ui/Logo';
 import { useAudio } from '~/core/systems/audio';
 import { useGameTracking } from '~/game/setup/tracking';
+import { useScreen, type ScreenId } from '~/core/systems/screens';
 
 import type { GameTuning } from '~/game/tuning';
 import { useGameData } from '~/game/screens/useGameData';
 import { gameState } from '~/game/state';
 
-// Game-specific controller — swap this import for a different game
-import { setupGame } from '~/game/mygame/screens/gameController';
+// Scooby Snacks Pop! game controller
+import { setupGame } from '~/game/scooby-snacks-pop/screens/gameController';
 
 export default function GameScreen() {
   const { coordinator } = useAssets();
@@ -19,6 +20,7 @@ export default function GameScreen() {
   const audio = useAudio();
   const gameData = useGameData();
   const { core: analytics } = useGameTracking();
+  const { goto } = useScreen();
   let containerRef: HTMLDivElement | undefined;
 
   // Setup game-specific controller (creates signals & effects in reactive context)
@@ -28,6 +30,7 @@ export default function GameScreen() {
     audio,
     gameData,
     analytics,
+    goto: (screen) => { void goto(screen as ScreenId); },
   });
 
   onMount(() => {

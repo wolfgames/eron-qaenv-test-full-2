@@ -1,0 +1,121 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "rows": 5,
+      "cols": 5,
+      "tutorialMode": true,
+      "dialogue": [
+        "Tap a group of matching bubbles to pop them!",
+        "Find the biggest cluster to earn more points!",
+        "Great job! Keep going!"
+      ],
+      "pointer": { "col": 2, "row": 1 },
+      "cells": [
+        { "id": 0,  "kind": "BURGER" },
+        { "id": 1,  "kind": "SNACK_BONE" },
+        { "id": 2,  "kind": "BURGER" },
+        { "id": 3,  "kind": "SNACK_BONE" },
+        { "id": 4,  "kind": "BURGER" },
+        { "id": 5,  "kind": "SNACK_BONE" },
+        { "id": 6,  "kind": "BURGER" },
+        { "id": 7,  "kind": "BURGER" },
+        { "id": 8,  "kind": "BURGER" },
+        { "id": 9,  "kind": "SNACK_BONE" },
+        { "id": 10, "kind": "BURGER" },
+        { "id": 11, "kind": "BURGER" },
+        { "id": 12, "kind": "BURGER" },
+        { "id": 13, "kind": "SNACK_BONE" },
+        { "id": 14, "kind": "SNACK_BONE" },
+        { "id": 15, "kind": "SNACK_BONE" },
+        { "id": 16, "kind": "SNACK_BONE" },
+        { "id": 17, "kind": "BURGER" },
+        { "id": 18, "kind": "SNACK_BONE" },
+        { "id": 19, "kind": "BURGER" },
+        { "id": 20, "kind": "BURGER" },
+        { "id": 21, "kind": "SNACK_BONE" },
+        { "id": 22, "kind": "SNACK_BONE" },
+        { "id": 23, "kind": "BURGER" },
+        { "id": 24, "kind": "SNACK_BONE" }
+      ]
+    },
+    {
+      "id": 2,
+      "rows": 5,
+      "cols": 5,
+      "tutorialMode": true,
+      "dialogue": [
+        "Watch what happens when you pop bubbles below others!",
+        "The bubbles above fall down — chain them for more points!",
+        "Ruh roh! You're getting good at this! 🐕"
+      ],
+      "pointer": { "col": 2, "row": 3 },
+      "cells": [
+        { "id": 0,  "kind": "BURGER" },
+        { "id": 1,  "kind": "PIZZA" },
+        { "id": 2,  "kind": "BURGER" },
+        { "id": 3,  "kind": "PIZZA" },
+        { "id": 4,  "kind": "BURGER" },
+        { "id": 5,  "kind": "PIZZA" },
+        { "id": 6,  "kind": "EMPTY" },
+        { "id": 7,  "kind": "BURGER" },
+        { "id": 8,  "kind": "EMPTY" },
+        { "id": 9,  "kind": "PIZZA" },
+        { "id": 10, "kind": "BURGER" },
+        { "id": 11, "kind": "PIZZA" },
+        { "id": 12, "kind": "EMPTY" },
+        { "id": 13, "kind": "BURGER" },
+        { "id": 14, "kind": "PIZZA" },
+        { "id": 15, "kind": "PIZZA" },
+        { "id": 16, "kind": "PIZZA" },
+        { "id": 17, "kind": "PIZZA" },
+        { "id": 18, "kind": "PIZZA" },
+        { "id": 19, "kind": "BURGER" },
+        { "id": 20, "kind": "BURGER" },
+        { "id": 21, "kind": "PIZZA" },
+        { "id": 22, "kind": "BURGER" },
+        { "id": 23, "kind": "PIZZA" },
+        { "id": 24, "kind": "BURGER" }
+      ]
+    },
+    {
+      "id": 3,
+      "rows": 5,
+      "cols": 5,
+      "tutorialMode": true,
+      "dialogue": [
+        "Tap the big group of matching bubbles!",
+        "Pop 7 or more to unlock a Spook Bomb! 💥",
+        "Scooby Dooby Doo! 🎉 You're a natural!"
+      ],
+      "pointer": { "col": 1, "row": 1 },
+      "cells": [
+        { "id": 0,  "kind": "HOTDOG" },
+        { "id": 1,  "kind": "HOTDOG" },
+        { "id": 2,  "kind": "HOTDOG" },
+        { "id": 3,  "kind": "PIZZA" },
+        { "id": 4,  "kind": "PIZZA" },
+        { "id": 5,  "kind": "HOTDOG" },
+        { "id": 6,  "kind": "HOTDOG" },
+        { "id": 7,  "kind": "HOTDOG" },
+        { "id": 8,  "kind": "HOTDOG" },
+        { "id": 9,  "kind": "PIZZA" },
+        { "id": 10, "kind": "PIZZA" },
+        { "id": 11, "kind": "HOTDOG" },
+        { "id": 12, "kind": "HOTDOG" },
+        { "id": 13, "kind": "PIZZA" },
+        { "id": 14, "kind": "PIZZA" },
+        { "id": 15, "kind": "PIZZA" },
+        { "id": 16, "kind": "PIZZA" },
+        { "id": 17, "kind": "PIZZA" },
+        { "id": 18, "kind": "PIZZA" },
+        { "id": 19, "kind": "PIZZA" },
+        { "id": 20, "kind": "PIZZA" },
+        { "id": 21, "kind": "HOTDOG" },
+        { "id": 22, "kind": "HOTDOG" },
+        { "id": 23, "kind": "PIZZA" },
+        { "id": 24, "kind": "PIZZA" }
+      ]
+    }
+  ]
+}

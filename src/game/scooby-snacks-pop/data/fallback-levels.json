@@ -1,0 +1,205 @@
+{
+  "levels": [
+    {
+      "id": 4,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "BURGER", "targetCount": 8, "clearedCount": 0 }],
+      "movesAllotted": 20,
+      "cells": [
+        {"id":0,"kind":"BURGER"},{"id":1,"kind":"PIZZA"},{"id":2,"kind":"HOTDOG"},{"id":3,"kind":"BURGER"},{"id":4,"kind":"PIZZA"},{"id":5,"kind":"HOTDOG"},{"id":6,"kind":"BURGER"},
+        {"id":7,"kind":"PIZZA"},{"id":8,"kind":"BURGER"},{"id":9,"kind":"PIZZA"},{"id":10,"kind":"BURGER"},{"id":11,"kind":"SNACK_BONE"},{"id":12,"kind":"BURGER"},{"id":13,"kind":"PIZZA"},
+        {"id":14,"kind":"BURGER"},{"id":15,"kind":"BURGER"},{"id":16,"kind":"SNACK_BONE"},{"id":17,"kind":"PIZZA"},{"id":18,"kind":"SNACK_BONE"},{"id":19,"kind":"BURGER"},{"id":20,"kind":"HOTDOG"},
+        {"id":21,"kind":"HOTDOG"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"BURGER"},{"id":24,"kind":"HOTDOG"},{"id":25,"kind":"PIZZA"},{"id":26,"kind":"SNACK_BONE"},{"id":27,"kind":"HOTDOG"},
+        {"id":28,"kind":"SNACK_BONE"},{"id":29,"kind":"HOTDOG"},{"id":30,"kind":"SNACK_BONE"},{"id":31,"kind":"BURGER"},{"id":32,"kind":"HOTDOG"},{"id":33,"kind":"SNACK_BONE"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"SNACK_BONE"},{"id":37,"kind":"PIZZA"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"PIZZA"},{"id":40,"kind":"HOTDOG"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"HOTDOG"},{"id":43,"kind":"BURGER"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"BURGER"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"BURGER"},{"id":48,"kind":"HOTDOG"},
+        {"id":49,"kind":"BURGER"},{"id":50,"kind":"SNACK_BONE"},{"id":51,"kind":"BURGER"},{"id":52,"kind":"SNACK_BONE"},{"id":53,"kind":"BURGER"},{"id":54,"kind":"SNACK_BONE"},{"id":55,"kind":"BURGER"},
+        {"id":56,"kind":"PIZZA"},{"id":57,"kind":"HOTDOG"},{"id":58,"kind":"PIZZA"},{"id":59,"kind":"HOTDOG"},{"id":60,"kind":"PIZZA"},{"id":61,"kind":"HOTDOG"},{"id":62,"kind":"PIZZA"}
+      ]
+    },
+    {
+      "id": 5,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "PIZZA", "targetCount": 8, "clearedCount": 0 }],
+      "movesAllotted": 20,
+      "cells": [
+        {"id":0,"kind":"PIZZA"},{"id":1,"kind":"BURGER"},{"id":2,"kind":"PIZZA"},{"id":3,"kind":"SNACK_BONE"},{"id":4,"kind":"PIZZA"},{"id":5,"kind":"BURGER"},{"id":6,"kind":"PIZZA"},
+        {"id":7,"kind":"BURGER"},{"id":8,"kind":"PIZZA"},{"id":9,"kind":"PIZZA"},{"id":10,"kind":"PIZZA"},{"id":11,"kind":"BURGER"},{"id":12,"kind":"HOTDOG"},{"id":13,"kind":"SNACK_BONE"},
+        {"id":14,"kind":"SNACK_BONE"},{"id":15,"kind":"HOTDOG"},{"id":16,"kind":"BURGER"},{"id":17,"kind":"PIZZA"},{"id":18,"kind":"HOTDOG"},{"id":19,"kind":"PIZZA"},{"id":20,"kind":"BURGER"},
+        {"id":21,"kind":"BURGER"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"HOTDOG"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"HOTDOG"},{"id":26,"kind":"PIZZA"},{"id":27,"kind":"HOTDOG"},
+        {"id":28,"kind":"HOTDOG"},{"id":29,"kind":"SNACK_BONE"},{"id":30,"kind":"PIZZA"},{"id":31,"kind":"HOTDOG"},{"id":32,"kind":"SNACK_BONE"},{"id":33,"kind":"HOTDOG"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"HOTDOG"},{"id":37,"kind":"SNACK_BONE"},{"id":38,"kind":"BURGER"},{"id":39,"kind":"SNACK_BONE"},{"id":40,"kind":"HOTDOG"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"SNACK_BONE"},{"id":43,"kind":"PIZZA"},{"id":44,"kind":"BURGER"},{"id":45,"kind":"PIZZA"},{"id":46,"kind":"BURGER"},{"id":47,"kind":"PIZZA"},{"id":48,"kind":"SNACK_BONE"},
+        {"id":49,"kind":"PIZZA"},{"id":50,"kind":"BURGER"},{"id":51,"kind":"PIZZA"},{"id":52,"kind":"BURGER"},{"id":53,"kind":"PIZZA"},{"id":54,"kind":"BURGER"},{"id":55,"kind":"PIZZA"},
+        {"id":56,"kind":"BURGER"},{"id":57,"kind":"SNACK_BONE"},{"id":58,"kind":"HOTDOG"},{"id":59,"kind":"PIZZA"},{"id":60,"kind":"HOTDOG"},{"id":61,"kind":"SNACK_BONE"},{"id":62,"kind":"BURGER"}
+      ]
+    },
+    {
+      "id": 6,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "HOTDOG", "targetCount": 7, "clearedCount": 0 }],
+      "movesAllotted": 20,
+      "cells": [
+        {"id":0,"kind":"HOTDOG"},{"id":1,"kind":"SNACK_BONE"},{"id":2,"kind":"HOTDOG"},{"id":3,"kind":"PIZZA"},{"id":4,"kind":"HOTDOG"},{"id":5,"kind":"SNACK_BONE"},{"id":6,"kind":"HOTDOG"},
+        {"id":7,"kind":"PIZZA"},{"id":8,"kind":"HOTDOG"},{"id":9,"kind":"HOTDOG"},{"id":10,"kind":"HOTDOG"},{"id":11,"kind":"BURGER"},{"id":12,"kind":"PIZZA"},{"id":13,"kind":"SNACK_BONE"},
+        {"id":14,"kind":"SNACK_BONE"},{"id":15,"kind":"BURGER"},{"id":16,"kind":"PIZZA"},{"id":17,"kind":"HOTDOG"},{"id":18,"kind":"PIZZA"},{"id":19,"kind":"HOTDOG"},{"id":20,"kind":"BURGER"},
+        {"id":21,"kind":"BURGER"},{"id":22,"kind":"HOTDOG"},{"id":23,"kind":"BURGER"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"BURGER"},{"id":26,"kind":"HOTDOG"},{"id":27,"kind":"PIZZA"},
+        {"id":28,"kind":"PIZZA"},{"id":29,"kind":"SNACK_BONE"},{"id":30,"kind":"HOTDOG"},{"id":31,"kind":"PIZZA"},{"id":32,"kind":"SNACK_BONE"},{"id":33,"kind":"PIZZA"},{"id":34,"kind":"HOTDOG"},
+        {"id":35,"kind":"HOTDOG"},{"id":36,"kind":"PIZZA"},{"id":37,"kind":"SNACK_BONE"},{"id":38,"kind":"BURGER"},{"id":39,"kind":"SNACK_BONE"},{"id":40,"kind":"PIZZA"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"SNACK_BONE"},{"id":43,"kind":"HOTDOG"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"HOTDOG"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"HOTDOG"},{"id":48,"kind":"SNACK_BONE"},
+        {"id":49,"kind":"HOTDOG"},{"id":50,"kind":"PIZZA"},{"id":51,"kind":"HOTDOG"},{"id":52,"kind":"PIZZA"},{"id":53,"kind":"HOTDOG"},{"id":54,"kind":"PIZZA"},{"id":55,"kind":"HOTDOG"},
+        {"id":56,"kind":"PIZZA"},{"id":57,"kind":"HOTDOG"},{"id":58,"kind":"SNACK_BONE"},{"id":59,"kind":"HOTDOG"},{"id":60,"kind":"SNACK_BONE"},{"id":61,"kind":"HOTDOG"},{"id":62,"kind":"PIZZA"}
+      ]
+    },
+    {
+      "id": 7,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "SNACK_BONE", "targetCount": 7, "clearedCount": 0 }],
+      "movesAllotted": 20,
+      "cells": [
+        {"id":0,"kind":"SNACK_BONE"},{"id":1,"kind":"BURGER"},{"id":2,"kind":"SNACK_BONE"},{"id":3,"kind":"PIZZA"},{"id":4,"kind":"SNACK_BONE"},{"id":5,"kind":"BURGER"},{"id":6,"kind":"SNACK_BONE"},
+        {"id":7,"kind":"BURGER"},{"id":8,"kind":"SNACK_BONE"},{"id":9,"kind":"SNACK_BONE"},{"id":10,"kind":"SNACK_BONE"},{"id":11,"kind":"HOTDOG"},{"id":12,"kind":"PIZZA"},{"id":13,"kind":"BURGER"},
+        {"id":14,"kind":"PIZZA"},{"id":15,"kind":"HOTDOG"},{"id":16,"kind":"BURGER"},{"id":17,"kind":"SNACK_BONE"},{"id":18,"kind":"HOTDOG"},{"id":19,"kind":"SNACK_BONE"},{"id":20,"kind":"HOTDOG"},
+        {"id":21,"kind":"HOTDOG"},{"id":22,"kind":"SNACK_BONE"},{"id":23,"kind":"HOTDOG"},{"id":24,"kind":"PIZZA"},{"id":25,"kind":"HOTDOG"},{"id":26,"kind":"SNACK_BONE"},{"id":27,"kind":"PIZZA"},
+        {"id":28,"kind":"PIZZA"},{"id":29,"kind":"BURGER"},{"id":30,"kind":"SNACK_BONE"},{"id":31,"kind":"PIZZA"},{"id":32,"kind":"BURGER"},{"id":33,"kind":"PIZZA"},{"id":34,"kind":"SNACK_BONE"},
+        {"id":35,"kind":"SNACK_BONE"},{"id":36,"kind":"PIZZA"},{"id":37,"kind":"BURGER"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"BURGER"},{"id":40,"kind":"PIZZA"},{"id":41,"kind":"BURGER"},
+        {"id":42,"kind":"BURGER"},{"id":43,"kind":"SNACK_BONE"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"SNACK_BONE"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"SNACK_BONE"},{"id":48,"kind":"BURGER"},
+        {"id":49,"kind":"SNACK_BONE"},{"id":50,"kind":"HOTDOG"},{"id":51,"kind":"SNACK_BONE"},{"id":52,"kind":"HOTDOG"},{"id":53,"kind":"SNACK_BONE"},{"id":54,"kind":"HOTDOG"},{"id":55,"kind":"SNACK_BONE"},
+        {"id":56,"kind":"HOTDOG"},{"id":57,"kind":"SNACK_BONE"},{"id":58,"kind":"BURGER"},{"id":59,"kind":"SNACK_BONE"},{"id":60,"kind":"BURGER"},{"id":61,"kind":"SNACK_BONE"},{"id":62,"kind":"HOTDOG"}
+      ]
+    },
+    {
+      "id": 8,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "BURGER", "targetCount": 9, "clearedCount": 0 }],
+      "movesAllotted": 22,
+      "cells": [
+        {"id":0,"kind":"BURGER"},{"id":1,"kind":"PIZZA"},{"id":2,"kind":"BURGER"},{"id":3,"kind":"HOTDOG"},{"id":4,"kind":"BURGER"},{"id":5,"kind":"PIZZA"},{"id":6,"kind":"BURGER"},
+        {"id":7,"kind":"PIZZA"},{"id":8,"kind":"BURGER"},{"id":9,"kind":"BURGER"},{"id":10,"kind":"BURGER"},{"id":11,"kind":"HOTDOG"},{"id":12,"kind":"SNACK_BONE"},{"id":13,"kind":"PIZZA"},
+        {"id":14,"kind":"HOTDOG"},{"id":15,"kind":"SNACK_BONE"},{"id":16,"kind":"PIZZA"},{"id":17,"kind":"BURGER"},{"id":18,"kind":"PIZZA"},{"id":19,"kind":"BURGER"},{"id":20,"kind":"HOTDOG"},
+        {"id":21,"kind":"BURGER"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"HOTDOG"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"HOTDOG"},{"id":26,"kind":"PIZZA"},{"id":27,"kind":"HOTDOG"},
+        {"id":28,"kind":"SNACK_BONE"},{"id":29,"kind":"HOTDOG"},{"id":30,"kind":"SNACK_BONE"},{"id":31,"kind":"BURGER"},{"id":32,"kind":"HOTDOG"},{"id":33,"kind":"SNACK_BONE"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"SNACK_BONE"},{"id":37,"kind":"PIZZA"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"PIZZA"},{"id":40,"kind":"HOTDOG"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"HOTDOG"},{"id":43,"kind":"BURGER"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"BURGER"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"BURGER"},{"id":48,"kind":"HOTDOG"},
+        {"id":49,"kind":"BURGER"},{"id":50,"kind":"SNACK_BONE"},{"id":51,"kind":"BURGER"},{"id":52,"kind":"SNACK_BONE"},{"id":53,"kind":"BURGER"},{"id":54,"kind":"SNACK_BONE"},{"id":55,"kind":"BURGER"},
+        {"id":56,"kind":"SNACK_BONE"},{"id":57,"kind":"HOTDOG"},{"id":58,"kind":"SNACK_BONE"},{"id":59,"kind":"HOTDOG"},{"id":60,"kind":"SNACK_BONE"},{"id":61,"kind":"HOTDOG"},{"id":62,"kind":"SNACK_BONE"}
+      ]
+    },
+    {
+      "id": 9,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [{ "treatKind": "PIZZA", "targetCount": 9, "clearedCount": 0 }],
+      "movesAllotted": 22,
+      "cells": [
+        {"id":0,"kind":"PIZZA"},{"id":1,"kind":"HOTDOG"},{"id":2,"kind":"PIZZA"},{"id":3,"kind":"BURGER"},{"id":4,"kind":"PIZZA"},{"id":5,"kind":"HOTDOG"},{"id":6,"kind":"PIZZA"},
+        {"id":7,"kind":"HOTDOG"},{"id":8,"kind":"PIZZA"},{"id":9,"kind":"PIZZA"},{"id":10,"kind":"PIZZA"},{"id":11,"kind":"SNACK_BONE"},{"id":12,"kind":"BURGER"},{"id":13,"kind":"HOTDOG"},
+        {"id":14,"kind":"BURGER"},{"id":15,"kind":"SNACK_BONE"},{"id":16,"kind":"HOTDOG"},{"id":17,"kind":"PIZZA"},{"id":18,"kind":"HOTDOG"},{"id":19,"kind":"PIZZA"},{"id":20,"kind":"SNACK_BONE"},
+        {"id":21,"kind":"SNACK_BONE"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"SNACK_BONE"},{"id":24,"kind":"BURGER"},{"id":25,"kind":"SNACK_BONE"},{"id":26,"kind":"PIZZA"},{"id":27,"kind":"SNACK_BONE"},
+        {"id":28,"kind":"BURGER"},{"id":29,"kind":"SNACK_BONE"},{"id":30,"kind":"PIZZA"},{"id":31,"kind":"SNACK_BONE"},{"id":32,"kind":"BURGER"},{"id":33,"kind":"SNACK_BONE"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"BURGER"},{"id":37,"kind":"SNACK_BONE"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"SNACK_BONE"},{"id":40,"kind":"BURGER"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"SNACK_BONE"},{"id":43,"kind":"PIZZA"},{"id":44,"kind":"HOTDOG"},{"id":45,"kind":"PIZZA"},{"id":46,"kind":"HOTDOG"},{"id":47,"kind":"PIZZA"},{"id":48,"kind":"SNACK_BONE"},
+        {"id":49,"kind":"PIZZA"},{"id":50,"kind":"HOTDOG"},{"id":51,"kind":"PIZZA"},{"id":52,"kind":"HOTDOG"},{"id":53,"kind":"PIZZA"},{"id":54,"kind":"HOTDOG"},{"id":55,"kind":"PIZZA"},
+        {"id":56,"kind":"HOTDOG"},{"id":57,"kind":"PIZZA"},{"id":58,"kind":"BURGER"},{"id":59,"kind":"PIZZA"},{"id":60,"kind":"BURGER"},{"id":61,"kind":"PIZZA"},{"id":62,"kind":"HOTDOG"}
+      ]
+    },
+    {
+      "id": 10,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [
+        { "treatKind": "HOTDOG", "targetCount": 8, "clearedCount": 0 },
+        { "treatKind": "SNACK_BONE", "targetCount": 6, "clearedCount": 0 }
+      ],
+      "movesAllotted": 25,
+      "cells": [
+        {"id":0,"kind":"HOTDOG"},{"id":1,"kind":"SNACK_BONE"},{"id":2,"kind":"HOTDOG"},{"id":3,"kind":"BURGER"},{"id":4,"kind":"HOTDOG"},{"id":5,"kind":"SNACK_BONE"},{"id":6,"kind":"HOTDOG"},
+        {"id":7,"kind":"SNACK_BONE"},{"id":8,"kind":"HOTDOG"},{"id":9,"kind":"HOTDOG"},{"id":10,"kind":"HOTDOG"},{"id":11,"kind":"PIZZA"},{"id":12,"kind":"BURGER"},{"id":13,"kind":"SNACK_BONE"},
+        {"id":14,"kind":"BURGER"},{"id":15,"kind":"PIZZA"},{"id":16,"kind":"SNACK_BONE"},{"id":17,"kind":"HOTDOG"},{"id":18,"kind":"PIZZA"},{"id":19,"kind":"HOTDOG"},{"id":20,"kind":"PIZZA"},
+        {"id":21,"kind":"PIZZA"},{"id":22,"kind":"HOTDOG"},{"id":23,"kind":"PIZZA"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"PIZZA"},{"id":26,"kind":"HOTDOG"},{"id":27,"kind":"PIZZA"},
+        {"id":28,"kind":"SNACK_BONE"},{"id":29,"kind":"PIZZA"},{"id":30,"kind":"HOTDOG"},{"id":31,"kind":"PIZZA"},{"id":32,"kind":"SNACK_BONE"},{"id":33,"kind":"PIZZA"},{"id":34,"kind":"HOTDOG"},
+        {"id":35,"kind":"HOTDOG"},{"id":36,"kind":"SNACK_BONE"},{"id":37,"kind":"BURGER"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"BURGER"},{"id":40,"kind":"SNACK_BONE"},{"id":41,"kind":"BURGER"},
+        {"id":42,"kind":"BURGER"},{"id":43,"kind":"HOTDOG"},{"id":44,"kind":"SNACK_BONE"},{"id":45,"kind":"HOTDOG"},{"id":46,"kind":"SNACK_BONE"},{"id":47,"kind":"HOTDOG"},{"id":48,"kind":"BURGER"},
+        {"id":49,"kind":"HOTDOG"},{"id":50,"kind":"BURGER"},{"id":51,"kind":"HOTDOG"},{"id":52,"kind":"BURGER"},{"id":53,"kind":"HOTDOG"},{"id":54,"kind":"BURGER"},{"id":55,"kind":"HOTDOG"},
+        {"id":56,"kind":"BURGER"},{"id":57,"kind":"SNACK_BONE"},{"id":58,"kind":"BURGER"},{"id":59,"kind":"SNACK_BONE"},{"id":60,"kind":"BURGER"},{"id":61,"kind":"SNACK_BONE"},{"id":62,"kind":"BURGER"}
+      ]
+    },
+    {
+      "id": 11,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [
+        { "treatKind": "BURGER", "targetCount": 8, "clearedCount": 0 },
+        { "treatKind": "PIZZA", "targetCount": 7, "clearedCount": 0 }
+      ],
+      "movesAllotted": 25,
+      "cells": [
+        {"id":0,"kind":"BURGER"},{"id":1,"kind":"PIZZA"},{"id":2,"kind":"BURGER"},{"id":3,"kind":"SNACK_BONE"},{"id":4,"kind":"BURGER"},{"id":5,"kind":"PIZZA"},{"id":6,"kind":"BURGER"},
+        {"id":7,"kind":"PIZZA"},{"id":8,"kind":"BURGER"},{"id":9,"kind":"BURGER"},{"id":10,"kind":"BURGER"},{"id":11,"kind":"HOTDOG"},{"id":12,"kind":"PIZZA"},{"id":13,"kind":"SNACK_BONE"},
+        {"id":14,"kind":"SNACK_BONE"},{"id":15,"kind":"HOTDOG"},{"id":16,"kind":"PIZZA"},{"id":17,"kind":"BURGER"},{"id":18,"kind":"PIZZA"},{"id":19,"kind":"BURGER"},{"id":20,"kind":"HOTDOG"},
+        {"id":21,"kind":"HOTDOG"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"HOTDOG"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"HOTDOG"},{"id":26,"kind":"PIZZA"},{"id":27,"kind":"HOTDOG"},
+        {"id":28,"kind":"PIZZA"},{"id":29,"kind":"SNACK_BONE"},{"id":30,"kind":"PIZZA"},{"id":31,"kind":"PIZZA"},{"id":32,"kind":"PIZZA"},{"id":33,"kind":"SNACK_BONE"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"PIZZA"},{"id":37,"kind":"SNACK_BONE"},{"id":38,"kind":"HOTDOG"},{"id":39,"kind":"SNACK_BONE"},{"id":40,"kind":"PIZZA"},{"id":41,"kind":"SNACK_BONE"},
+        {"id":42,"kind":"SNACK_BONE"},{"id":43,"kind":"BURGER"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"BURGER"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"BURGER"},{"id":48,"kind":"SNACK_BONE"},
+        {"id":49,"kind":"BURGER"},{"id":50,"kind":"HOTDOG"},{"id":51,"kind":"BURGER"},{"id":52,"kind":"HOTDOG"},{"id":53,"kind":"BURGER"},{"id":54,"kind":"HOTDOG"},{"id":55,"kind":"BURGER"},
+        {"id":56,"kind":"HOTDOG"},{"id":57,"kind":"BURGER"},{"id":58,"kind":"PIZZA"},{"id":59,"kind":"BURGER"},{"id":60,"kind":"PIZZA"},{"id":61,"kind":"BURGER"},{"id":62,"kind":"HOTDOG"}
+      ]
+    },
+    {
+      "id": 12,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [
+        { "treatKind": "SNACK_BONE", "targetCount": 8, "clearedCount": 0 }
+      ],
+      "movesAllotted": 22,
+      "cells": [
+        {"id":0,"kind":"SNACK_BONE"},{"id":1,"kind":"BURGER"},{"id":2,"kind":"SNACK_BONE"},{"id":3,"kind":"HOTDOG"},{"id":4,"kind":"SNACK_BONE"},{"id":5,"kind":"BURGER"},{"id":6,"kind":"SNACK_BONE"},
+        {"id":7,"kind":"BURGER"},{"id":8,"kind":"SNACK_BONE"},{"id":9,"kind":"SNACK_BONE"},{"id":10,"kind":"SNACK_BONE"},{"id":11,"kind":"PIZZA"},{"id":12,"kind":"HOTDOG"},{"id":13,"kind":"BURGER"},
+        {"id":14,"kind":"HOTDOG"},{"id":15,"kind":"PIZZA"},{"id":16,"kind":"BURGER"},{"id":17,"kind":"SNACK_BONE"},{"id":18,"kind":"PIZZA"},{"id":19,"kind":"SNACK_BONE"},{"id":20,"kind":"PIZZA"},
+        {"id":21,"kind":"PIZZA"},{"id":22,"kind":"SNACK_BONE"},{"id":23,"kind":"PIZZA"},{"id":24,"kind":"BURGER"},{"id":25,"kind":"PIZZA"},{"id":26,"kind":"SNACK_BONE"},{"id":27,"kind":"PIZZA"},
+        {"id":28,"kind":"BURGER"},{"id":29,"kind":"PIZZA"},{"id":30,"kind":"SNACK_BONE"},{"id":31,"kind":"PIZZA"},{"id":32,"kind":"BURGER"},{"id":33,"kind":"PIZZA"},{"id":34,"kind":"SNACK_BONE"},
+        {"id":35,"kind":"SNACK_BONE"},{"id":36,"kind":"PIZZA"},{"id":37,"kind":"HOTDOG"},{"id":38,"kind":"BURGER"},{"id":39,"kind":"HOTDOG"},{"id":40,"kind":"PIZZA"},{"id":41,"kind":"HOTDOG"},
+        {"id":42,"kind":"HOTDOG"},{"id":43,"kind":"SNACK_BONE"},{"id":44,"kind":"PIZZA"},{"id":45,"kind":"SNACK_BONE"},{"id":46,"kind":"PIZZA"},{"id":47,"kind":"SNACK_BONE"},{"id":48,"kind":"HOTDOG"},
+        {"id":49,"kind":"SNACK_BONE"},{"id":50,"kind":"HOTDOG"},{"id":51,"kind":"SNACK_BONE"},{"id":52,"kind":"HOTDOG"},{"id":53,"kind":"SNACK_BONE"},{"id":54,"kind":"HOTDOG"},{"id":55,"kind":"SNACK_BONE"},
+        {"id":56,"kind":"HOTDOG"},{"id":57,"kind":"SNACK_BONE"},{"id":58,"kind":"BURGER"},{"id":59,"kind":"SNACK_BONE"},{"id":60,"kind":"BURGER"},{"id":61,"kind":"SNACK_BONE"},{"id":62,"kind":"HOTDOG"}
+      ]
+    },
+    {
+      "id": 13,
+      "rows": 9,
+      "cols": 7,
+      "tutorialMode": false,
+      "objectives": [
+        { "treatKind": "PIZZA", "targetCount": 9, "clearedCount": 0 },
+        { "treatKind": "HOTDOG", "targetCount": 7, "clearedCount": 0 }
+      ],
+      "movesAllotted": 25,
+      "cells": [
+        {"id":0,"kind":"PIZZA"},{"id":1,"kind":"HOTDOG"},{"id":2,"kind":"PIZZA"},{"id":3,"kind":"SNACK_BONE"},{"id":4,"kind":"PIZZA"},{"id":5,"kind":"HOTDOG"},{"id":6,"kind":"PIZZA"},
+        {"id":7,"kind":"HOTDOG"},{"id":8,"kind":"PIZZA"},{"id":9,"kind":"PIZZA"},{"id":10,"kind":"PIZZA"},{"id":11,"kind":"BURGER"},{"id":12,"kind":"SNACK_BONE"},{"id":13,"kind":"HOTDOG"},
+        {"id":14,"kind":"SNACK_BONE"},{"id":15,"kind":"BURGER"},{"id":16,"kind":"HOTDOG"},{"id":17,"kind":"PIZZA"},{"id":18,"kind":"HOTDOG"},{"id":19,"kind":"PIZZA"},{"id":20,"kind":"BURGER"},
+        {"id":21,"kind":"BURGER"},{"id":22,"kind":"PIZZA"},{"id":23,"kind":"BURGER"},{"id":24,"kind":"SNACK_BONE"},{"id":25,"kind":"BURGER"},{"id":26,"kind":"PIZZA"},{"id":27,"kind":"BURGER"},
+        {"id":28,"kind":"HOTDOG"},{"id":29,"kind":"BURGER"},{"id":30,"kind":"PIZZA"},{"id":31,"kind":"HOTDOG"},{"id":32,"kind":"BURGER"},{"id":33,"kind":"HOTDOG"},{"id":34,"kind":"PIZZA"},
+        {"id":35,"kind":"PIZZA"},{"id":36,"kind":"HOTDOG"},{"id":37,"kind":"BURGER"},{"id":38,"kind":"PIZZA"},{"id":39,"kind":"BURGER"},{"id":40,"kind":"HOTDOG"},{"id":41,"kind":"BURGER"},
+        {"id":42,"kind":"BURGER"},{"id":43,"kind":"PIZZA"},{"id":44,"kind":"HOTDOG"},{"id":45,"kind":"PIZZA"},{"id":46,"kind":"HOTDOG"},{"id":47,"kind":"PIZZA"},{"id":48,"kind":"BURGER"},
+        {"id":49,"kind":"PIZZA"},{"id":50,"kind":"SNACK_BONE"},{"id":51,"kind":"PIZZA"},{"id":52,"kind":"SNACK_BONE"},{"id":53,"kind":"PIZZA"},{"id":54,"kind":"SNACK_BONE"},{"id":55,"kind":"PIZZA"},
+        {"id":56,"kind":"SNACK_BONE"},{"id":57,"kind":"PIZZA"},{"id":58,"kind":"HOTDOG"},{"id":59,"kind":"PIZZA"},{"id":60,"kind":"HOTDOG"},{"id":61,"kind":"PIZZA"},{"id":62,"kind":"SNACK_BONE"}
+      ]
+    }
+  ]
+}
