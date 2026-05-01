@@ -1,0 +1,273 @@
+# phase-summary.yml — Per-phase structured handoff
+# Each phase writes under its own id key. Downstream phases read only the keys they need.
+# Generated per run in pipeline/runs/run-<NN>/
+
+pass_gate:
+  status: complete
+  pass: core
+  previous_pass_stable: true
+  previous_run_ref: null
+  skip_reason: ""
+  carry_forward: {}
+
+prime:
+  status: complete
+  project: "Scooby Snacks Pop! (eron-qaenv-test-full-2)"
+  stack: "pixi v8 + solidjs + gsap + bun (vite, vitest)"
+  existing_features: 7
+  dom_overlays:
+    - "WolfGamesLogo — bottom-8 in GameScreen.tsx — ~64px reserved bottom"
+  carry_forward:
+    target_device: "iPhone reference portrait 390x844 (dvh)"
+    game_greenfield: true
+    reserved_bottom_px: 64
+    reserved_top_px: 0
+    game_controller_stub: true
+    stack_gaps: []
+    host_rules_missing: true
+
+analyze:
+  status: complete
+  features:
+    exists: 4
+    partial: 0
+    new: 22
+    conflict: 2
+    content_gap: 3
+  conflict_breakdown:
+    reuse: 0
+    adapt: 1
+    replace: 1
+  high_risk: [ecs-plugin, game-controller-stub]
+  medium_risk: [board-grid, treat-bubbles, combo-bubbles, blocker-entities, gravity-refill, input-lock, hud-renderer, tutorial-levels, chapter-system, companion-dialogue, win-sequence, loss-sequence, themed-background, start-screen-stub, game-state-signals]
+  open_questions: 3
+  carry_forward:
+    critical_integration_point: ecs-plugin
+    transformative_hint: false
+
+plan:
+  status: complete
+  gdd_type: additive
+  batches: 11
+  features: 22
+  new_files: 34
+  modified_files: 4
+  viewport_budget:
+    hud_top_px: 127
+    board_px: 589
+    cell_h_px: 65
+    cell_w_px: 56
+    companion_strip_px: 64
+    logo_reserve_px: 64
+    dom_reserved_bottom: 128
+    total: 844
+  resolved_questions: 3
+  out_of_pass_cos: []
+  warnings:
+    - "collision-resolved:dom-in-game-code — skill-wins (guardrail #1, critical); gdd-ask=dom-mode-stub dropped"
+    - "collision-resolved:state-source-of-truth — skill-wins (ecs-state.mdc, critical); gdd-ask=signals-source-of-truth dropped"
+    - "collision-resolved:game-slug-in-paths — skill-wins (scaffold-state §game-root substitution, critical); resolved to scooby-snacks-pop"
+    - "collision-resolved:score-cosmetic-only — skill-wins (scoring.md §core-pass, soft, allow-gdd-overrides=false); multiplicative formula adopted"
+    - "collision-resolved:animation-timing-gravity — skill-wins (precedence.md §soft, allow-gdd-overrides=false); gdd 80ms adopted (no conflicting concrete skill value)"
+    - "collision-resolved:animation-timing-refill — skill-wins (precedence.md §soft, allow-gdd-overrides=false); gdd 150ms adopted (no conflicting concrete skill value)"
+    - "collision-resolved:touch-target-bubble — skill-wins (mobile-constraints.mdc §touch-targets, soft); values compatible (56px ≥ 44px)"
+    - "self-audit:src/core-readonly — PASS: no batch files under src/core/"
+    - "self-audit:no-stubs-placeholders — PASS: all resolved_questions_scalars are concrete values; tutorial JSON flagged in completeness_gaps not as resolved"
+    - "self-audit:slug-substitution — PASS: no <game-root> or mygame in batch file paths; slug=scooby-snacks-pop throughout"
+    - "self-audit:collision-resolution-coverage — PASS: 7 collisions detected, 7 collision-resolved entries written"
+    - "self-audit:integration-file-coverage — PASS: every files.integration entry exercised by ≥1 acceptance test per batch"
+  resolved_questions_scalars:
+    OQ-1: "silent-discard — animation state provides implicit feedback; no queue indicator in core pass"
+    OQ-2: "groupScore=(groupSize-1)*50; cascadeMultiplier=cascadeDepth+1; perTapScore=groupScore*cascadeMultiplier"
+    OQ-3: "companion strip y=viewport_h-128; companion_h=64px above logo_h=64px; dom_reserved_bottom=128"
+    q-game-name: "scooby-snacks-pop"
+    q-scoring-formula: "(groupSize-1)*50*(cascadeDepth+1)"
+    q-star-thresholds: "1star=complete; 2star=movesRemaining>=30%; 3star=movesRemaining>=55%"
+    q-viewport-cell-size: "cell_w=56px cell_h=65px at 390x844"
+    q-combo-activation-pass: "secondary — combo spawn detection in core; activation effects deferred"
+    q-tutorial-count: 3
+    q-chapter-count: 5
+    q-levels-per-chapter: 15
+  carry_forward:
+    game_slug: scooby-snacks-pop
+    hook_batch: 3
+    priority_ordering_applied: true
+    cos_deferred_to_batch: {}
+    viewport_budget_derived_from: greenfield_defaults
+    critical_integration_point: game-controller-stub
+
+implement:
+  status: complete
+  batches_completed: "11/11"
+  files_modified: 6
+  files_created: 35
+  tests_added: 80
+  features_audited: 22
+  issues_found: 4
+  fixes_applied: 4
+  deferred:
+    - "combo activation effects (3×3 blast, row+col clear) — secondary pass; core pass detects spawn only"
+    - "GPU asset atlases for treat bubbles, blockers, combo types — emoji/tint fallbacks used in core pass"
+    - "Audio SFX/music bundles — wired but empty in core pass (silent gameplay)"
+    - "Get 5 More Moves monetization button — present but disabled (core pass)"
+  blockers: []
+  ux_gaps:
+    - "combo activation secondary-pass scope: player can see Ghost Cluster spawn but cannot activate it — inform via dialogue text in Batch 9"
+    - "tutorial pointer is emoji '👆' not SVG art — acceptable in core pass per guardrail design-smells fallback priority"
+  cos_gaps: []
+  cos_findings:
+    - batch_id: 1
+      cos_id: core-interaction
+      finding: "Interaction archetype doc written; tap gesture with shake feedback for invalid; ANIMATING silent-discard confirmed"
+    - batch_id: 3
+      cos_id: scoring
+      finding: "perTapScore=(groupSize-1)*50*(cascadeDepth+1); two multiplicative dimensions; star thresholds 30%/55% tested"
+    - batch_id: 4
+      cos_id: animated-dynamics
+      finding: "Identity-stable gravity (stable cell IDs); GSAP ease-out tweens; CASCADE_TIMING table enforced; Stone Gargoyle pass-through tested"
+    - batch_id: 5
+      cos_id: canvas
+      finding: "3 combo types with distinct tints (GHOST_CLUSTER=0x00FFFF, SPOOK_BOMB=0xFF6600, MEGA_MUNCHIE=0xFF00FF); 4 blocker types; Phantom Lock immune to adjacent-pop"
+    - batch_id: 6
+      cos_id: core-interaction
+      finding: "Tutorial levels 1-3 authored with real content; SolvabilityChecker validates all generated boards; fallback pool ≥ 10 levels"
+    - batch_id: 7
+      cos_id: animated-dynamics
+      finding: "Win/loss phase transitions via ECS; GSAP tweens for board dim (LOST) and celebration cascade (WON)"
+    - batch_id: 9
+      cos_id: canvas
+      finding: "Companion strip y=716px (844-64-64); dialogue auto-dismisses via GSAP.delayedCall(3); GSAP not setTimeout"
+    - batch_id: 11
+      cos_id: core-interaction
+      finding: "TutorialOverlay pointer bounces over target cell; correct tap advances dialogue; tutorial-complete localStorage flag"
+  carry_forward:
+    priority_reorder_applied: false
+    dod_failures: []
+    deliverable_gaps: []
+    batch_boundary_violations: []
+    unfixed_ux_issues:
+      - "combo-activation-ux: Ghost Cluster spawn visible but untappable — secondary pass activation"
+      - "background-contrast: emoji tile alpha=0.5 passes readability on dark boards; verify on light chapter themes"
+    combo_thresholds_corrected: "plan spec 5-6/7-9/10+ used; test files and implementation aligned"
+
+integrate:
+  status: complete
+  viewport_rederived: false
+  orphans_wired:
+    - "src/game/scooby-snacks-pop/useCompanionDialogue.ts:useCompanionDialogue — wired to gameController.ts after companionRenderer.init(); cleanup() called in destroy()"
+  orphans_deleted: []
+  fallbacks_unified:
+    - "BlockerRenderer — added emoji label (🕸️/🖼️/🗿/🔒) from Blocker.ts blockerDefs.emoji; bare tinted circle replaced with emoji+circle pattern"
+    - "ComboRenderer — added emoji label (👻/💣/🌟) from ComboBubble.ts comboVisuals.emoji; bare tinted circle replaced with emoji+circle pattern"
+  unreachable: []
+  unwired_modules_found: 2
+  warnings: []
+  carry_forward:
+    viewport_budget_recomputed_total: null
+    asset_fallbacks_unified_style: "emoji"
+    unreachable_blocks_playability: false
+    orphan_wiring_blocked:
+      - "src/game/scooby-snacks-pop/screens/chapterConfig.ts:CHAPTERS — chapter-complete branch in ResultsScreen.tsx requires new conditional logic (isChapterComplete signal/prop); wiring deferred to stabilize"
+
+player_flow:
+  status: complete
+  journey_walked: true
+  transitions_checked:
+    - start_to_game
+    - tutorial_1_to_tutorial_2
+    - tutorial_3_to_campaign_L1
+    - game_to_results_win
+    - game_to_results_loss
+    - results_to_game_retry
+  fun_test_result: pass
+  issues_found: 6
+  fixes_applied: 6
+  carry_forward:
+    journey_breaks: []
+    fun_test_failed_features: []
+    difficulty_mismatch: []
+    theme_drift: []
+    cos_still_failing: []
+
+verify:
+  status: complete
+  build: pass
+  tests_passing: 221
+  tests_total: 221
+  test_files_passing: 30
+  test_files_total: 30
+  fix_cycles: 2
+  playability: "smoke-unavailable — browser MCP not present"
+  warnings:
+    - "content_fidelity_skipped: flavor-strings-gdd-spec-minimal — GDD lists 5 dialogue events but no exact-copy mandates beyond voice/persona; all checked pass"
+  remaining_issues:
+    - "browser-mcp-unavailable — smoke scope selected but no browser MCP in environment"
+  guardrail_findings:
+    - "G1: PASS — no DOM in GPU code (startView.ts DOM usage is a screen file, exempt)"
+    - "G2/G18: PASS — all destroy() methods call gsap.killTweensOf before Pixi destroy"
+    - "G3: PASS — no requestAnimationFrame / setInterval / setTimeout found"
+    - "G4: PASS — eventMode passive/static/none applied correctly on all containers"
+    - "G5: PASS — only scene-* / core-* / audio-* / theme-* / boot-* prefixes used"
+    - "G6: PASS — no per-frame allocation found in tick/update functions"
+    - "G7: PASS — no individual image loads; Graphics+Text used as emoji fallbacks"
+    - "G8: PASS — no src/core/ files modified"
+    - "G9: PASS — no Math.random() in state actions; mulberry32 seeded PRNG throughout"
+    - "G10: PASS — no React imports; SolidJS used for screens"
+    - "G11: PASS — bun.lock only; no npm/yarn/pnpm"
+    - "G12: PASS — all screen IDs valid (loading, start, game, results)"
+    - "G13: PASS — no filters used; tint+alpha pattern throughout"
+    - "G14: N/A — single scene; unloadBundle available but not called mid-session in core pass"
+    - "G15: PASS — no TODO/FIXME/placeholder text in game code; real copy throughout"
+    - "G16: PASS — single Pixi renderer only"
+    - "G17: PASS — no getContext('2d') or canvas.style manipulation"
+  content_fidelity_findings:
+    - "FIXED: SNACK_BONE tint was 0xF5DEB3 (wheat/cream); corrected to 0x6EB5FF (blue) per GDD 'Blue-tinted bubble'"
+    - "FIXED: HOTDOG tint was 0xDC143C (crimson); corrected to 0xFFE333 (yellow) per GDD 'Yellow-tinted bubble'"
+    - "PASS: BURGER tint 0xFF8C00 (orange) — GDD 'Orange-tinted bubble' ✓"
+    - "PASS: MYSTERY_GLOB tint 0x9B59B6 (purple) — GDD 'Purple-tinted bubble' ✓"
+    - "PASS: Chapter names/locations match GDD spec for all 5 chapters"
+    - "PASS: Companion dialogue voice is Scooby-authentic (Ruh roh, Scooby Dooby Doo, snack-focused loss line)"
+  data_fairness_findings:
+    - "PASS: No hardcoded winning indices; board uses seeded RNG with randomized positions"
+    - "PASS: Fallback level pool has 10+ entries covering levels 4+ range"
+    - "PASS: All treat types have distinct tint AND emoji (never color-alone)"
+    - "PASS: Viewport reserves (HUD_TOP=127, BOTTOM_RESERVE=128) applied via VIEWPORT constants in all renderers"
+    - "PASS: Blocker visuals distinct per type (different emoji and tint)"
+  carry_forward:
+    browser_verified: false
+    browser_verify_scope: smoke
+    unwinnable: null
+    perf_flags: []
+    guardrails_clean: true
+    content_fidelity_clean: true
+
+stabilize:
+  status: complete
+  completion_ratio: "22/22 (100%)"
+  test_count: 252
+  known_issues:
+    - "chapter-complete branch in ResultsScreen.tsx was unwired — resolved in stabilize (wiring fix)"
+    - "browser-mcp-unavailable — smoke scope unavailable; carry forward"
+  cos_failed: []
+  cos_rationale: {}
+  cos_results:
+    core-interaction: pass
+    canvas: pass
+    animated-dynamics: pass
+    scoring: pass
+  completeness_gaps: []
+  pipeline_status: complete
+  warnings:
+    - "deferred-closed:orphan-wiring-chapterConfig — ResultsScreen.tsx now shows chapter-complete variant via lastCompletedChapter signal; CHAPTERS config wired; ~40 LOC across state.ts + gameController.ts + ResultsScreen.tsx (within wiring ceiling)"
+    - "deferred-closed:combo-activation-ux — cannot close in core pass (secondary pass scope); re-justified as carry_forward.unresolved_for_next_pass"
+    - "deferred-closed:background-contrast — core pass uses dark chapter themes only; light themes are secondary pass concern; re-justified as carry_forward"
+    - "deferred-closed:browser-mcp-unavailable — no browser MCP in environment; smoke test cannot run; re-justified as carry_forward"
+  carry_forward:
+    next_pass_ready: true
+    pass_stability: stable
+    unresolved_for_next_pass:
+      - "combo-activation-ux: Ghost Cluster/Spook Bomb/Mega Munchie activation effects — secondary pass pattern-busters scope"
+      - "background-contrast: light chapter themes not yet rendered — secondary pass asset scope"
+      - "browser-smoke-test: browser MCP unavailable — run smoke-test skill when environment has browser MCP"
+      - "audio: SFX/music bundles empty — audio pass"
+      - "gpu-atlases: emoji fallbacks in use — asset-gen pipeline v0.5"

@@ -37,6 +37,8 @@ export interface GameControllerDeps {
   audio: unknown;
   gameData: unknown;
   analytics: unknown;
+  /** Optional navigation callback — called by the controller to navigate to a screen. */
+  goto?: (screen: string) => void;
 }
 
 export interface GameController {
